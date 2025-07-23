@@ -501,7 +501,7 @@ fn parse_variants(
 
                 // Generate the struct definitions
                 let struct_definition = quote! {
-                    #[derive(Debug, Clone, PartialEq)]
+                    #[derive(Debug, Clone)]
                     pub struct #struct_ident {
                         #(#field_defs)*
                     }
